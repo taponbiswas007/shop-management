@@ -7,7 +7,11 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(11, 77, 11);
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #203864;
+    background-color: #f8faff;
 }
 img{
     width: 100%;
@@ -21,64 +25,19 @@ a{
 /* ============================== */
 /*=====home section start======== */
 /* ============================== */
-.header-main-area{}
-.company-logo{}
+.header-area{
+    background: #ffffff;
+    box-shadow: 14px 4px 23px 0px rgba(0, 0, 0, 0.0705882353);
+}
+.header-main-area{
+    
+
+}
+.logo{
+    width: 80px;
+}
 /* ============================== */
 /*=====home section end========== */
 /* ============================== */
 
 
-/* ============================== */
-/*=====buyer section start======= */
-/* ============================== */
-.user-details{
-    padding-top: 20px;
-    
-}
-.user-images{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.user-image-main-area{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid rgb(12, 72, 4);
-    box-shadow: 3px 3px 9px 0px rgba(1, 60, 12, 0.75);
-}
-.user-name h1{ 
-    color: #ffffff;
-    font-family: "roboto";
-    font-weight: 600;
-    font-size: 25px;
-    text-transform: capitalize;
-    text-align: center;
-}
-.user-contact-details{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 20px;
-}
-.user-address p, .user-mobile-number h2,
-.user-mobile-number h3, .user-email h2,
-.user-email h3{
-    color: #ffffff;
-    font-family: "poppins";
-    font-weight: 400;
-    font-size: 15px;
-    text-transform: capitalize;
-    text-align: center;
-    margin-bottom: 4px;
-}
-.user-mobile-number, .user-email{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
-}
-/* ============================== */
-/*=====buyer section end========= */
-/* ============================== */
