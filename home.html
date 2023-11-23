@@ -21,7 +21,7 @@
     <!-- ========================= -->
     <!-- == header section start== -->
     <!-- ========================= -->
-    <section class="header-area">
+    <section class="header-area shadow-lg p-3 mb-5 bg-body rounded">
         <div class="container-fluid">
             <div class="header-main-area">
                 <div class="row">
@@ -113,7 +113,7 @@
 
                 <!-- side menu area start -->
                 <div class="col-xl-3 col-lg-3 col-md-3">
-                    <main class="side-menu-area">
+                    <main class="side-menu-area shadow-lg p-3 mb-5 bg-body rounded">
                         <ul class="main-menu-list">
                             <li class="main-menu-item">
                                 <a href="#" class="main-menu-link">
@@ -140,14 +140,14 @@
 
                 <!-- hero area start -->
                 <div class="col-xl-9 col-lg-9 col-md-9">
-                    <main class="hero-area">
+                    <main class="hero-area shadow-lg p-3 mb-5 bg-body rounded">
                         <div class="hero-header">
                             <h1>accounts</h1>
                             <div class="buyer-and-saller-add-area">
-                                <button class="add-party">
+                                <button class="add-party" id="addbuyer">
                                     add a buyer
                                 </button>
-                                <button class="add-party">
+                                <button class="add-party" id="addSaller">
                                     add a saller
                                 </button>
                             </div>
@@ -155,7 +155,7 @@
                         <div class="party-list-area">
                             <div class="party-list-header">
                                 <div class="party-select-area">
-                                    <button class="party-select-button act-btn">
+                                    <button class="party-select-button ">
                                         buyer list
                                     </button>
                                     <button class="party-select-button">
@@ -202,7 +202,131 @@
     <!-- ==================================== -->
     <!-- ===side menu and hero section end=== -->
     <!-- ==================================== -->
+    <div class="full-wraper-popup"> </div>
 
+
+    <!-- ============================= -->
+    <!-- ==add buyer form area start== -->
+    <!-- ============================= -->
+    <div class="buyer-add-form shadow-lg p-3 mb-5 bg-body rounded">
+        <main class="buyer-form-main-content">
+            <button class="close-btn" id="addbuyerClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h1>add a new buyer</h1>
+            <label for="">
+                company/person name : <br>
+                <input type="text" class="name-box" placeholder="Enter the company name">
+            </label>
+            <label for="">
+                name (optional) : <br>
+                <input type="text" class="name-box" placeholder="Enter the contact person name">
+            </label>
+            <label for="">
+                address : <br>
+                <input type="text" class="name-box" placeholder="Enter the contact person name">
+            </label>
+            <label for="">
+                mobile number : <br>
+                <input type="number" class="name-box" placeholder="+880-1700000000">
+            </label>
+            <label for="">
+                email address (optional) : <br>
+                <input type="email" class="name-box" placeholder="example@gmail.com">
+            </label>
+
+            <h2>upload a valid document</h2>
+            <h3>optional</h3>
+            <div class="documet-upload-area">
+                <div class="document-box">
+                    <i class="fa-regular fa-image"></i> <br>
+                    <span>image</span>
+                </div>
+                <div class="document-box">
+                    <i class="fa-regular fa-file-pdf"></i> <br>
+                    <span>nid</span>
+                </div>
+                <div class="document-box">
+                    <i class="fa-regular fa-file-pdf"></i> <br>
+                    <span>tin</span>
+                </div>
+                <div class="document-box">
+                    <i class="fa-regular fa-file-pdf"></i> <br>
+                    <span>bin</span>
+                </div>
+            </div>
+            <div class="save-btn-area">
+                <button class="save-btn">
+                    save
+                </button>
+            </div>
+        </main>
+    </div>
+    <!-- ============================= -->
+    <!-- ==add buyer form area end==== -->
+    <!-- ============================= -->
+
+
+    <!-- ============================== -->
+    <!-- ==add saller form area start== -->
+    <!-- ============================== -->
+    <div class="buyer-add-form shadow-lg p-3 mb-5 bg-body rounded">
+        <main class="buyer-form-main-content">
+            <button class="close-btn" id="addsallerClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h1>add a new saller</h1>
+            <label for="">
+                company/person name : <br>
+                <input type="text" class="name-box" placeholder="Enter the company name">
+            </label>
+            <label for="">
+                name (optional) : <br>
+                <input type="text" class="name-box" placeholder="Enter the contact person name">
+            </label>
+            <label for="">
+                address : <br>
+                <input type="text" class="name-box" placeholder="Enter the contact person name">
+            </label>
+            <label for="">
+                mobile number : <br>
+                <input type="number" class="name-box" placeholder="+880-1700000000">
+            </label>
+            <label for="">
+                email address (optional) : <br>
+                <input type="email" class="name-box" placeholder="example@gmail.com">
+            </label>
+
+            <h2>upload a valid document</h2>
+            <h3>optional</h3>
+            <div class="documet-upload-area">
+                <div class="document-box">
+                    <i class="fa-regular fa-image"></i> <br>
+                    <span>image</span>
+                </div>
+                <div class="document-box">
+                    <i class="fa-regular fa-file-pdf"></i> <br>
+                    <span>nid</span>
+                </div>
+                <div class="document-box">
+                    <i class="fa-regular fa-file-pdf"></i> <br>
+                    <span>tin</span>
+                </div>
+                <div class="document-box">
+                    <i class="fa-regular fa-file-pdf"></i> <br>
+                    <span>bin</span>
+                </div>
+            </div>
+            <div class="save-btn-area">
+                <button class="save-btn">
+                    save
+                </button>
+            </div>
+        </main>
+    </div>
+    <!-- ============================== -->
+    <!-- ==add saller form area end==== -->
+    <!-- ============================== -->
 
 
 
