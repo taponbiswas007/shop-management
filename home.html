@@ -46,7 +46,7 @@
                             <div class="massage-icon">
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
-                            <div class="user-profile">
+                            <div class="user-profile" id="userDetails">
                                 <div class="user-image">
                                     <img src="assets/images/owner.png" alt="image">
                                 </div>
@@ -140,7 +140,7 @@
 
                 <!-- hero area start -->
                 <div class="col-xl-9 col-lg-9 col-md-9">
-                    <main class="hero-area shadow-lg p-3 mb-5 bg-body rounded">
+                    <main class="hero-area shadow-lg   bg-body rounded">
                         <div class="hero-header">
                             <h1>accounts</h1>
                             <div class="buyer-and-saller-add-area">
@@ -155,10 +155,10 @@
                         <div class="party-list-area">
                             <div class="party-list-header">
                                 <div class="party-select-area">
-                                    <button class="party-select-button ">
+                                    <button class="party-select-button " id="buyerListbtn">
                                         buyer list
                                     </button>
-                                    <button class="party-select-button">
+                                    <button class="party-select-button" id="sallerListbtn">
                                         saller list
                                     </button>
                                 </div>
@@ -167,31 +167,439 @@
                                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
                                 </div>
                             </div>
-                            <div class="party-list-table-area">
+
+                            <!-- =========================== -->
+                            <!-- buyer list table area start -->
+                            <!-- =========================== -->
+                            <div class="party-list-table-area" id="buyerList">
+                                <h1 class="buyer-and-saller-list-header">buyer list</h1>
                                 <div class="party-list-table-header-row">
                                     <div class="party-list-table-header-columns">name</div>
-                                    <div class="party-list-table-header-columns">mobile number</div>
-                                    <div class="party-list-table-header-columns">due amount</div>
-                                    <div class="party-list-table-header-columns">last payment date</div>
-                                    <div class="party-list-table-header-columns">commetment to pay date</div>
-                                    <div class="party-list-table-header-columns">send reminder</div>
-                                    <div class="party-list-table-header-columns">delete/edit</div>
+                                    <div class="party-list-table-header-columns">number</div>
+                                    <div class="party-list-table-header-columns">details</div>
+                                    <div class="party-list-table-header-columns">auto alart</div>
                                 </div>
-                                <div class="party-list-table-data-row">
-                                    <div class="party-list-table-data-columns">tapon</div>
-                                    <div class="party-list-table-data-columns">01776806706</div>
-                                    <div class="party-list-table-data-columns">100000</div>
-                                    <div class="party-list-table-data-columns">30-6-23</div>
-                                    <div class="party-list-table-data-columns">10-6-23</div>
+                                <div class="party-list-table-data-row gray">
+                                    <div class="party-list-table-data-columns">ts international</div>
                                     <div class="party-list-table-data-columns">
-                                        <button class="send-btn">reminder</button>
+                                        <a href="#">
+                                            01776806706
+                                        </a>
                                     </div>
                                     <div class="party-list-table-data-columns">
-                                        <button class="delete">delete</button>
-                                        <button class="edit">edit</button>
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
                                     </div>
                                 </div>
+                                <div class="party-list-table-data-row green">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row gray">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row green">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row gray">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row green">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row gray">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row green">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                  <!-- page change area start -->
+                                  <div class="page-change-area">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- page change area end -->
                             </div>
+                            <!-- ========================= -->
+                            <!-- buyer list table area end -->
+                            <!-- ========================= -->
+
+
+                            <!-- ============================ -->
+                            <!-- saller list table area start -->
+                            <!-- ============================ -->
+                            <div class="party-list-table-area" id="sallerList">
+                                <h1 class="buyer-and-saller-list-header">saller list</h1>
+                                <div class="party-list-table-header-row">
+                                    <div class="party-list-table-header-columns">name</div>
+                                    <div class="party-list-table-header-columns">number</div>
+                                    <div class="party-list-table-header-columns">details</div>
+                                    <div class="party-list-table-header-columns">auto alart</div>
+                                </div>
+                                <div class="party-list-table-data-row gray">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row green">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row gray">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row green">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row gray">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row green">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row gray">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="party-list-table-data-row green">
+                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">
+                                        <a href="#">
+                                            01776806706
+                                        </a>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <button class="view-details">
+                                            details
+                                        </button>
+                                    </div>
+                                    <div class="party-list-table-data-columns">
+                                        <div class="switch-container">
+                                            <label class="switch">
+                                              <input type="checkbox" id="switchToggle">
+                                              <span class="slider"></span>
+                                            </label>
+                                            <p id="status">OFF</p>
+                                          </div>
+                                    </div>
+                                </div>
+                                 <!-- page change area start -->
+                                <div class="page-change-area">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- page change area end --> 
+                            </div>
+                            <!-- ========================== -->
+                            <!-- saller list table area end -->
+                            <!-- ========================== -->
+                               
+
+                        </div>
+
+                        <div class="instraction-area">
+                            <h1 class="instraction-content">click what you want to see( Buyer list / saller list / search buyer or saller)</h1>
                         </div>
                     </main>
                 </div>

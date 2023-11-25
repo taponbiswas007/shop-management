@@ -1,10 +1,38 @@
 $(document).ready(function() {
-    $(".profile-details-downarrow").click(function(){
+    $("#userDetails").click(function(){
         $(".user-profile-detalis-area").slideToggle();
         $(".profile-details-downarrow").toggleClass("rotated");
         });
     
 
+    //buyer list and saller list changer
+    $("#buyerListbtn").click(function(){
+        $("#buyerList").slideToggle(1000, function() {
+            updateInstructionVisibility();
+        });
+        $("#sallerList").hide();
+    });
+    
+    $("#sallerListbtn").click(function(){
+        $("#sallerList").slideToggle(1000, function() {
+            updateInstructionVisibility();
+        });
+        $("#buyerList").hide();
+    });
+    
+    function updateInstructionVisibility() {
+        if ($("#buyerList").is(":visible") || $("#sallerList").is(":visible")) {
+            $(".instraction-content").hide();
+        } else {
+            $(".instraction-content").show();
+        }
+    }
+    
+    
+    
+    
+    
+    
 
 
     //add a new buyer start
@@ -42,4 +70,14 @@ $(document).ready(function() {
         $('.full-wraper-popup').fadeOut();
     });
     //add a new saller end
+
+
+    //swith button area alart
+    $('#switchToggle').change(function() {
+        if ($(this).prop('checked')) {
+          $('#status').text('ON');
+        } else {
+          $('#status').text('OFF');
+        }
+      });
 });
