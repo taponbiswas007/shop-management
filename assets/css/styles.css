@@ -140,7 +140,7 @@ a:hover{
 }
 .user-profile-detalis-area{
     position: absolute;
-    top: 52px;
+    top: 100%;
     left: 0;
     width: 100%;
     display: none;
@@ -733,3 +733,89 @@ a:hover{
 /* ================================== */
 /*=====account  section end========== */
 /* ================================== */
+
+
+
+/* ============================== */
+/*===== stock  section start====== */
+/* =============================== */
+.product-level-bar{
+    width: 100%;
+}
+.party-select-area>span{
+    color: #203864;
+    font-size: 20px;
+    font-family: "roboto";
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.search-dropdown {
+    position: relative;
+}
+
+#search-input {
+    padding: 7px 15px;
+    width: 100%;
+    color: #203864;
+    font-size: 13px;
+    font-family: "roboto";
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #203864;
+    border-radius: 7px;
+    background: gainsboro;
+}
+#search-input:focus{
+    border: 2px solid #2964d1;
+}
+
+#dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 7px;
+}
+
+#dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+    color: #203864;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "roboto";
+    font-weight: 500;
+}
+
+#dropdown-list li:hover {
+    background-color: #203864;
+    color: #ffffff;
+}
+.product-select-for-purchase{
+    cursor: pointer;
+    color: #203864;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "roboto";
+    font-weight: 500;
+    padding: 7px 15px;
+    width: 100%;
+    border: 1px solid #203864;
+    border-radius: 7px;
+    background: gainsboro;
+}
+.product-select-for-purchase:focus{
+    border: 2px solid #2964d1;
+}
+
+
+/* ============================== */
+/*===== stock  section start====== */
+/* =============================== */

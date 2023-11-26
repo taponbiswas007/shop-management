@@ -122,13 +122,13 @@
                                 </a>
                             </li>
                             <li class="main-menu-item">
-                                <a href="#" class="main-menu-link active">
+                                <a href="account.html" class="main-menu-link">
                                     <i class="fa-solid fa-file-invoice"></i>
                                     accounts
                                 </a>
                             </li>
                             <li class="main-menu-item">
-                                <a href="#" class="main-menu-link">
+                                <a href="stock.html" class="main-menu-link active">
                                     <i class="fa-solid fa-store"></i>
                                     stock
                                 </a>
@@ -144,7 +144,7 @@
                         <div class="hero-header">
                             <h1>stock</h1>
                             <div class="buyer-and-saller-add-area">
-                                <button class="add-party" id="addbuyer">
+                                <button class="add-party" id="productbtn">
                                     product entry
                                 </button>
                                 <button class="add-party" id="addSaller">
@@ -155,204 +155,129 @@
                         <div class="party-list-area">
                             <div class="party-list-header">
                                 <div class="party-select-area">
-                                    <button class="party-select-button " id="buyerListbtn">
-                                        product list
-                                    </button>
-                                    <button class="party-select-button" id="sallerListbtn">
-                                        supplier list
-                                    </button>
-                                </div>
-                                <div class="party-search-area">
-                                    <input type="search" placeholder="search your party" class="party-search">
-                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                    <span>select your products:</span>
+                                    <div class="search-dropdown">
+                                        <input type="text" placeholder="search your products" id="search-input">
+                                        <ul id="dropdown-list">
+                                            <li id="brbCables">brb cables</li>
+                                            <li>rr cables</li>
+                                            <li>bbs cables</li>
+                                            <li>bizli cables</li>
+                                            <li>gazi super wire</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- =========================== -->
-                            <!-- buyer list table area start -->
+                            <!-- products list table area start -->
                             <!-- =========================== -->
                             <div class="party-list-table-area" id="buyerList">
-                                <h1 class="buyer-and-saller-list-header">buyer list</h1>
+                                <h1 class="buyer-and-saller-list-header">brb cables</h1>
                                 <div class="party-list-table-header-row">
-                                    <div class="party-list-table-header-columns">name</div>
-                                    <div class="party-list-table-header-columns">number</div>
-                                    <div class="party-list-table-header-columns">details</div>
-                                    <div class="party-list-table-header-columns">auto alart</div>
+                                    <div class="party-list-table-header-columns">size</div>
+                                    <div class="party-list-table-header-columns">quantity</div>
+                                    <div class="party-list-table-header-columns">unit</div>
+                                    <div class="party-list-table-header-columns">low/high</div>
                                 </div>
                                 <div class="party-list-table-data-row gray">
-                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">red 1.3mm</div>
+                                    <div class="party-list-table-data-columns">10</div>
+                                    <div class="party-list-table-data-columns">coil</div>
                                     <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
+                                        <div class="progress product-level-bar">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="party-list-table-data-row green">
-                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">red 1.3mm</div>
+                                    <div class="party-list-table-data-columns">10</div>
+                                    <div class="party-list-table-data-columns">coil</div>
                                     <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
+                                        <div class="progress product-level-bar">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="party-list-table-data-row gray">
-                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">red 1.3mm</div>
+                                    <div class="party-list-table-data-columns">10</div>
+                                    <div class="party-list-table-data-columns">coil</div>
                                     <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
+                                        <div class="progress product-level-bar">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="party-list-table-data-row green">
-                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">red 1.3mm</div>
+                                    <div class="party-list-table-data-columns">10</div>
+                                    <div class="party-list-table-data-columns">coil</div>
                                     <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
+                                        <div class="progress product-level-bar">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="party-list-table-data-row gray">
-                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">red 1.3mm</div>
+                                    <div class="party-list-table-data-columns">10</div>
+                                    <div class="party-list-table-data-columns">coil</div>
                                     <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
+                                        <div class="progress product-level-bar">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="party-list-table-data-row green">
-                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">red 1.3mm</div>
+                                    <div class="party-list-table-data-columns">10</div>
+                                    <div class="party-list-table-data-columns">coil</div>
                                     <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
+                                        <div class="progress product-level-bar">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="party-list-table-data-row gray">
-                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">red 1.3mm</div>
+                                    <div class="party-list-table-data-columns">10</div>
+                                    <div class="party-list-table-data-columns">coil</div>
                                     <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
+                                        <div class="progress product-level-bar">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="party-list-table-data-row green">
-                                    <div class="party-list-table-data-columns">ts international</div>
+                                    <div class="party-list-table-data-columns">red 1.3mm</div>
+                                    <div class="party-list-table-data-columns">10</div>
+                                    <div class="party-list-table-data-columns">coil</div>
                                     <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
+                                        <div class="progress product-level-bar">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="party-list-table-data-row gray">
+                                    <div class="party-list-table-data-columns">red 1.3mm</div>
+                                    <div class="party-list-table-data-columns">10</div>
+                                    <div class="party-list-table-data-columns">coil</div>
                                     <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
+                                        <div class="progress product-level-bar">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="party-list-table-data-row green">
+                                    <div class="party-list-table-data-columns">red 1.3mm</div>
+                                    <div class="party-list-table-data-columns">10</div>
+                                    <div class="party-list-table-data-columns">coil</div>
                                     <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
+                                        <div class="progress product-level-bar">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
                                     </div>
                                 </div>
                                   <!-- page change area start -->
@@ -378,224 +303,8 @@
                                 <!-- page change area end -->
                             </div>
                             <!-- ========================= -->
-                            <!-- buyer list table area end -->
+                            <!-- products list table area end -->
                             <!-- ========================= -->
-
-
-                            <!-- ============================== -->
-                            <!-- supplier list table area start -->
-                            <!-- ============================== -->
-                            <div class="party-list-table-area" id="sallerList">
-                                <h1 class="buyer-and-saller-list-header">saller list</h1>
-                                <div class="party-list-table-header-row">
-                                    <div class="party-list-table-header-columns">name</div>
-                                    <div class="party-list-table-header-columns">number</div>
-                                    <div class="party-list-table-header-columns">details</div>
-                                    <div class="party-list-table-header-columns">auto alart</div>
-                                </div>
-                                <div class="party-list-table-data-row gray">
-                                    <div class="party-list-table-data-columns">ts international</div>
-                                    <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="party-list-table-data-row green">
-                                    <div class="party-list-table-data-columns">ts international</div>
-                                    <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="party-list-table-data-row gray">
-                                    <div class="party-list-table-data-columns">ts international</div>
-                                    <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="party-list-table-data-row green">
-                                    <div class="party-list-table-data-columns">ts international</div>
-                                    <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="party-list-table-data-row gray">
-                                    <div class="party-list-table-data-columns">ts international</div>
-                                    <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="party-list-table-data-row green">
-                                    <div class="party-list-table-data-columns">ts international</div>
-                                    <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="party-list-table-data-row gray">
-                                    <div class="party-list-table-data-columns">ts international</div>
-                                    <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="party-list-table-data-row green">
-                                    <div class="party-list-table-data-columns">ts international</div>
-                                    <div class="party-list-table-data-columns">
-                                        <a href="#">
-                                            01776806706
-                                        </a>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <button class="view-details">
-                                            details
-                                        </button>
-                                    </div>
-                                    <div class="party-list-table-data-columns">
-                                        <div class="switch-container">
-                                            <label class="switch">
-                                              <input type="checkbox" id="switchToggle">
-                                              <span class="slider"></span>
-                                            </label>
-                                            <p id="status">OFF</p>
-                                          </div>
-                                    </div>
-                                </div>
-                                 <!-- page change area start -->
-                                <div class="page-change-area">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                            </a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                            </a>
-                                        </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <!-- page change area end --> 
-                            </div>
-                            <!-- ========================== -->
-                            <!-- supplier list table area end -->
-                            <!-- ========================== -->
-                               
-
                         </div>
 
                         <div class="instraction-area">
@@ -614,14 +323,22 @@
 
 
     <!-- ============================= -->
-    <!-- ==add buyer form area start== -->
+    <!-- ==products entry area start== -->
     <!-- ============================= -->
-    <div class="buyer-add-form shadow-lg p-3 mb-5 bg-body rounded">
+    <div id="productsEntry" class="buyer-add-form  shadow-lg p-3 mb-5 bg-body rounded">
         <main class="buyer-form-main-content">
-            <button class="close-btn" id="addbuyerClose">
+            <button class="close-btn" id="productsClose">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-            <h1>add a new buyer</h1>
+            <h1>enter your products</h1>
+            <div class="party-select-area">
+                <span>select your products:</span>
+                <select class="product-select-for-purchase">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
             <label for="">
                 company/person name : <br>
                 <input type="text" class="name-box" placeholder="Enter the company name">
@@ -671,71 +388,8 @@
         </main>
     </div>
     <!-- ============================= -->
-    <!-- ==add buyer form area end==== -->
+    <!-- ==products entry area end==== -->
     <!-- ============================= -->
-
-
-    <!-- ================================ -->
-    <!-- ==add supplier form area start== -->
-    <!-- ================================ -->
-    <div class="buyer-add-form shadow-lg p-3 mb-5 bg-body rounded">
-        <main class="buyer-form-main-content">
-            <button class="close-btn" id="addsallerClose">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h1>add a new supplier</h1>
-            <label for="">
-                company/person name : <br>
-                <input type="text" class="name-box" placeholder="Enter the company name">
-            </label>
-            <label for="">
-                name (optional) : <br>
-                <input type="text" class="name-box" placeholder="Enter the contact person name">
-            </label>
-            <label for="">
-                address : <br>
-                <input type="text" class="name-box" placeholder="Enter the contact person name">
-            </label>
-            <label for="">
-                mobile number : <br>
-                <input type="number" class="name-box" placeholder="+880-1700000000">
-            </label>
-            <label for="">
-                email address (optional) : <br>
-                <input type="email" class="name-box" placeholder="example@gmail.com">
-            </label>
-
-            <h2>upload a valid document</h2>
-            <h3>optional</h3>
-            <div class="documet-upload-area">
-                <div class="document-box">
-                    <i class="fa-regular fa-image"></i> <br>
-                    <span>image</span>
-                </div>
-                <div class="document-box">
-                    <i class="fa-regular fa-file-pdf"></i> <br>
-                    <span>nid</span>
-                </div>
-                <div class="document-box">
-                    <i class="fa-regular fa-file-pdf"></i> <br>
-                    <span>tin</span>
-                </div>
-                <div class="document-box">
-                    <i class="fa-regular fa-file-pdf"></i> <br>
-                    <span>bin</span>
-                </div>
-            </div>
-            <div class="save-btn-area">
-                <button class="save-btn">
-                    save
-                </button>
-            </div>
-        </main>
-    </div>
-    <!-- ============================== -->
-    <!-- ==add saller form area end==== -->
-    <!-- ============================== -->
-
 
 
 
